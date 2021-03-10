@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dimitrije Denić</title>
+	<link rel="shortcut icon" href="img/1icon.png" type="image/x-icon"/>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="nav-moove">
+		<header>
+			<img onclick="location.href = 'index.html';" id="icon" class="shadow-inset-center" src="img/2icon.png">
+			<nav id="nav">
+
+				<ul>
+					<li>
+						<a class="nav_button" href="projects.html">Projects</a>
+					</li>
+					<li>
+						<a class="nav_button" href="resume.html">Resume</a>
+					</li>
+					<li>
+						<a class="nav_button" href="contact.html">Contact</a>
+					</li>
+				</ul>
+
+			</nav>
+		</header>
+	</div>
+	
+	<div class="bgimg-4">
+		<div class="caption">
+			<span class="border shadow-pop-tl" style="text-transform:uppercase;">Welcome to my world!</span><br><br>
+			
+		</div>
+	</div>
+	
+	<section>
+		<div id="main-headding" style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+			<h3 id="main-title">I'm Dimitrije Denić</h3>
+			<p id="welcome-text">Welcome to my personal / portfolio / resume web site!</p>
+		</div>
+
+	</div>
+</section>
+<div class="bgimg-2">
+	<div class="caption">
+		<span class="border shadow-pop-tl" style=";font-size:25px;color: #f7f7f7; text-transform: uppercase;">About me</span><br><br>
+		<span class="border" id="typeWriter" onload="typeWriter()"></span>
+		<p></p>
+	</div>
+</div>
+
+<div style="position:relative;">
+	<div style="color:#ddd;background-color:#303030;text-align:center;padding:50px 80px;text-align: center;">
+		<h2>GET TO KNOW ME</h2>
+	</div>
+</div>
+
+<div class="bgimg-3">
+	<div class="caption">
+		<!--<span class="border" style="background-color:#282E34;font-size:25px;color: #f7f7f7;"></span>-->
+		<span class="about_me" >
+			<p id="about-me" class="fade-in">I am a 24 year old junior java developer and game dev. Currently studying Java at <a id="ita" href="https://www.it-akademija.com/" target="_blank"> IT Academy</a> in Belgrade.Ever since I was a kid I was always interested in computers and games,and that is where it all started. I am self-thought. When I was in high school I started learning basic photoshop, html5, C# skills and just last year I stared developing my own game, Asteroid Dash, in Unity. I am a fast learner and I consider myself to be hard working and very cooperative. </p>
+		</span>
+	</div>
+</div>
+
+<div style="position:relative;">
+	<div style="color:#ddd;background-color:#303030;text-align:center;padding:50px 80px;text-align: center;">
+		<h2>CONTACT</h2>
+	</div>
+</div>
+
+<div class="bgimg-1">
+	<h3 id="contact-text" style="background-color:rgba(255, 255, 255,60%); ">Feel Free to contact me for business inquiries</h3>
+	<div id="contact-part">
+		<div class="column">
+			<div class="contact-form">
+			<form id="contact" method="POST" action="contact-form-process.php" autocomplete="off">
+				<label for="email">E-mail</label>
+				<input type="text" id="email" name="email" placeholder="Your E-mail..">
+				<label for="fname">Your Name</label>
+				<input type="text" id="name" name="name" placeholder="Your name..">
+				<!--<label for="lname">Last Name</label>
+				<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+				<label for="country">Country</label>
+				<select id="country" name="country">
+					<option value="australia">Australia</option>
+					<option value="canada">Canada</option>
+					<option value="usa">USA</option>
+				</select>-->
+				<label for="subject">Message</label>
+				<textarea id="subject" name="message" placeholder="What's on Your mind?" style="height:170px"></textarea>
+				<input type="submit" value="Send">
+			</form>
+			</div>
+		</div>
+
+	</div>
+</div>
+<footer>
+	<h4 id="copiright">&#169 Dimitrije Denic - dimitrijesg@gmail.com</h4>
+	</footer>
+<script type="text/javascript">
+
+	var txt = 'Java, C#, HTML5, CSS3, JavaScript, Unity, Photoshop...';
+	var i = 0;
+	var speed = 60;
+	window.onload = function typeWriter() {
+		if (i < txt.length) {
+			document.getElementById("typeWriter").innerHTML += txt.charAt(i);
+			i++;
+			setTimeout(typeWriter, speed);
+		}
+	}
+</script>
+</body>
+</html>
